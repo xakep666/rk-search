@@ -1,0 +1,12 @@
+#ifndef RKSEARCH_GLOBAL_H
+#define RKSEARCH_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RKSEARCH_LIBRARY)
+#  define RKSEARCHSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RKSEARCHSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RKSEARCH_GLOBAL_H
